@@ -3,7 +3,8 @@ layout: null
 ---
 ## Contact
 
-If there are any issues with this theme, contact {{ site.author }}.
+fsgfskjfdgkjsadghlsdghkadjgh ahksdgh ksagha ksdhgkjh kghasgk hfkjgh kjfgkjh gkjhfkjg
+
 
 {% if site.email %}
 <a href="mailto:{{ site.email }}">Email</a>

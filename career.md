@@ -1,16 +1,17 @@
 ---
 layout: null
-title: Career
 ---
-## Career
-
 <ul class="timeline">
 {% for post in site.posts %}
 <li>
-    <h2>{{ post.title }}</h2>
-    <h3>{{ post.location }}</h3>
-    <small>{{ post.start }} - {{ post.end }}</small>
-    <p>{{ post.content }}</p>
+  <span class="dot"></span>
+  <div class="event">
+    <p class="job">
+      {{ post.title }}{% if post.location %} @ {{ post.location }}{% endif %}
+    </p>
+    <p class="duration">{{ post.start }} - {{ post.end }}</p>
+    <p class="content">{{ post.content }}</p>
+  </div>
 </li>
 {% endfor %}
 </ul>

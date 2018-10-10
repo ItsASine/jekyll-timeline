@@ -1,0 +1,96 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.timeline {
+  position: relative;
+  padding: 0;
+}
+
+.job {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.duration {
+  font-size: 1.2em;
+}
+
+.content {
+  font-size: 1em;
+}
+
+/* The timeline line */
+.timeline:before {
+  left: 50%;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: .2%;
+  margin-left: -.2%;
+  background-color: #3c3f41;
+}
+
+/* Points on the timeline */
+
+/* Giving a bit of room above the first item on the line for present day */
+.dot:first-of-type {
+  margin-top: 1%;
+}
+
+.dot {
+  left: 50%;
+  margin-left: -.65%;
+  width: 1.2%;
+  padding-top: 1.2%;
+  background-color: #3c3f41;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+}
+
+/* Timeline set-up */
+
+.timeline > li {
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: "";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+/* Alternating events on the timeline */
+
+.event {
+  position: relative;
+  width: 100%;
+  float: left;
+  text-align: right;
+  padding: 0 4% 4% 0;
+}
+
+li:nth-child(odd) > .event {
+  float: right;
+  text-align: left;
+  padding: 0 0 4% 4%;
+}
+
+.event:last-of-type {
+  padding-bottom: 0;
+}
