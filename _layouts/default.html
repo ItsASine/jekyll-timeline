@@ -1,0 +1,23 @@
+{% include header.html %}
+
+{% for page in site.pages %}
+{% if page.title == "Career" %}
+<section>
+    {{ page.content }}
+</section>
+{% elsif page.title == "About" %}
+<section>
+    {{ page.content }}
+</section>
+{% elsif page.title == "Contact" %}
+<section>
+    {{ page.content }}
+</section>
+{% else %}
+<section>
+    {{ page.content }}
+</section>
+{% endif %}
+{% endfor %}
+
+{% include footer.html %}
